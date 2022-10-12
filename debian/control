@@ -1,0 +1,27 @@
+Source: libtext-soundex-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Axel Beckert <abe@debian.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-soundex-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-soundex-perl.git
+Homepage: https://metacpan.org/release/Text-Soundex
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-perl
+
+Package: libtext-soundex-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Multi-Arch: same
+Description: implementation of the soundex algorithm
+ Text::Soundex implements the original soundex algorithm developed by Robert
+ Russell and Margaret Odell, patented in 1918 and 1922, as well as a variation
+ called "American Soundex" used for US census data, and currently maintained by
+ the National Archives and Records Administration (NARA).
